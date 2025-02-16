@@ -3,10 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Function that generate a number in
-// the range [1, N] and checks if the
-// generated number is the same as the
-// guessed number or not
+
 void guess(int N)
 {
     int number, guess, numberofguess = 0;
@@ -20,9 +17,7 @@ void guess(int N)
     printf("Guess a number between"
            " 1 and %d\n",
            N);
-    // Using a do-while loop that will
-    // work until user guesses
-    // the correct number
+
     do
     {
         if (numberofguess > 8)
@@ -47,9 +42,7 @@ void guess(int N)
                    " please! \n");
             numberofguess++;
         }
-        // Printing number of times
-        // user has taken to guess
-        // the number
+
         else
         {
             if (numberofguess == 1)
